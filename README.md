@@ -44,5 +44,5 @@ Instructions for AGCD:
 
 2- The following runs the traininng and prediction at the same line using 20 cores: export OMP_NUM_THREADS=20; ./svm-train -c 2 -g 2 svmguide1 svmguide1.t
 
-
+You are welcome to test the algorthims with the already scaled datasets in the dataset folder.
 
