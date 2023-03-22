@@ -1,11 +1,17 @@
 # SVM_libraries
 Running libsvm and Asynchronous parallel greedy coordinate descent (AGCD) 
 We are following this procedure:
+
 • Transform data to the format of an SVM package (if using datasets from libsvm site, skip this step.
+
 • scale the data.
-• Consider the RBF kernel.
+
+• Use the RBF kernel.
+
 • Use cross-validation to find the best parameter C and γ.
+
 • Use the best parameter C and γ to train the whole training set and record time it takes.
+
 • Test and record accuracy.
 
 The libsvm and AGCD both requires unix environment. For our experiment, we used cygwin on windows 10.
@@ -36,8 +42,7 @@ Instructions for AGCD:
 
 1- It uses the scaled datasets from libsvm and the optimal hyper-parameters values from grid.by.
 
-2- The following runs the traininng and prediction at the same line using 20 cores: 
-export OMP_NUM_THREADS=20; ./svm-train -c 2 -g 2 svmguide1 svmguide1.t
+2- The following runs the traininng and prediction at the same line using 20 cores: export OMP_NUM_THREADS=20; ./svm-train -c 2 -g 2 svmguide1 svmguide1.t
 
 
 
